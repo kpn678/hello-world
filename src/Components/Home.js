@@ -1,11 +1,15 @@
 import './Home.css'
 
-const Home = () => {
+const Home = ({ setUsername, username, setRoom, room, socket }) => {
+
   return (
     <section className='login-form'>
       <h2>Welcome to the chatroom platform for all devs to communicate!</h2>
-      <input placeholder='Username'/>
-      <select>
+      <input 
+        placeholder='Username'
+        onChange={(event) => setUsername(event.target.value)}
+      />
+      <select onChange={(event) => setRoom(event.target.value)}>
         <option>-- Select Room --</option>
         <option value='javascript'>JavaScript</option>
         <option value='python'>Python</option>
