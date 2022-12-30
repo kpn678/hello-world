@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { io } from 'socket.io-client';
 import Home from './Components/Home';
 
+const socket = io.connect('http://localhost:4000');
+
 function App() {
 
   const [username, setUsername] = useState('');
@@ -21,6 +23,7 @@ function App() {
                 username={username}
                 setRoom={setRoom}
                 room={room}
+                socket={socket}
               />
             } 
           />
