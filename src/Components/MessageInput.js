@@ -20,8 +20,11 @@ const MessageInput = ({ username, room, socket}) => {
         onChange={(event) => setMessage(event.target.value)}
         value={message}
       />
+      <button className='btn btn-primary' onClick={sendMessage}>
+        Send
+      </button>
     </section>
-  )
+  );
 }
 
 export default MessageInput;
