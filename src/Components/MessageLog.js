@@ -1,5 +1,6 @@
 import './MessageLog.css';
 import { useState, useEffect } from 'react';
+import MessageCard from './MessageCard';
 
 const MessageLog = ({ socket }) => {
   const [messagesReceived, setMessagesReceived] = useState([]);
@@ -23,6 +24,21 @@ const MessageLog = ({ socket }) => {
     const date = new Date(timestamp);
     return date.toLocaleDateString();
   }
+
+  const message = messagesReceived.map((msg, i) => {
+    return <MessageCard
+      key={i}
+      msgUsername={msg.username}
+      msgText={msg.message}
+      msgCreatedTime={formatTimestamp(msg.createdTime)}
+    />
+  });
+
+  return (
+    <section className='messages'>
+      {message}
+    </section>
+  );
 }
 
 export default MessageLog;
