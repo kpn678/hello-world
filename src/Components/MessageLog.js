@@ -16,7 +16,8 @@ const MessageLog = ({ socket }) => {
         }
       ]);
     });
-  });
+    return () => socket.off('receive_message');
+  }, [socket]);
 }
 
 export default MessageLog;
