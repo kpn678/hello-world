@@ -1,7 +1,12 @@
 import './Chat.css';
+import MessageLog from './MessageLog';
 
-const Chat = () => {
-
+const Chat = ({ socket }) => {
+  return (
+    <section className='chat-page'>
+      <MessageLog socket={socket} />
+    </section>
+  );
 }
 
 export default Chat;

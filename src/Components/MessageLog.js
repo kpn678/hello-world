@@ -1,9 +1,13 @@
 import './MessageLog.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const Messages = () => {
+const MessageLog = ({ socket }) => {
   const [messagesReceived, setMessagesReceived] = useState([]);
+
+  useEffect(() => {
+
+  });
 }
 
-export default Messages;
+export default MessageLog;
 
