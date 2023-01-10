@@ -18,6 +18,11 @@ const MessageLog = ({ socket }) => {
     });
     return () => socket.off('receive_message');
   }, [socket]);
+
+  const formatTimestamp = (timestamp) => {
+    const date = new Date(timestamp);
+    return date.toLocaleDateString();
+  }
 }
 
 export default MessageLog;
