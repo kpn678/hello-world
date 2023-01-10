@@ -5,7 +5,17 @@ const MessageLog = ({ socket }) => {
   const [messagesReceived, setMessagesReceived] = useState([]);
 
   useEffect(() => {
-
+    socket.on('receive_message', (data) => {
+      console.log(data);
+      setMessagesReceived((state) => [
+        ...state,
+        {
+          message: data.message,
+          username: data.username,
+          createdTime: data.createdTime
+        }
+      ]);
+    });
   });
 }
 
