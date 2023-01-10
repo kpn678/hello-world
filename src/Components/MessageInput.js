@@ -11,6 +11,17 @@ const MessageInput = ({ username, room, socket}) => {
       setMessage('');
     }
   }
+
+  return (
+    <section className='send-container'>
+      <input
+        className='message-field'
+        placeholder='Type message...'
+        onChange={(event) => setMessage(event.target.value)}
+        value={message}
+      />
+    </section>
+  )
 }
 
 export default MessageInput;
