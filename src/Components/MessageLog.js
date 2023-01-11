@@ -13,7 +13,7 @@ const MessageLog = ({ socket }) => {
         {
           message: data.message,
           username: data.username,
-          createdTime: data.createdTime
+          __createdtime__: data.__createdtime__
         }
       ]);
     });
@@ -30,7 +30,7 @@ const MessageLog = ({ socket }) => {
       key={i}
       msgUsername={msg.username}
       msgText={msg.message}
-      msgCreatedTime={formatTimestamp(msg.createdTime)}
+      msgCreatedTime={formatTimestamp(msg.__createdtime__)}
     />
   });
 
