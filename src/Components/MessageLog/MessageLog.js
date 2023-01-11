@@ -1,6 +1,6 @@
 import './MessageLog.css';
 import { useState, useEffect } from 'react';
-import MessageCard from './MessageCard';
+import MessageCard from '../MessageCard/MessageCard';
 
 const MessageLog = ({ socket }) => {
   const [messagesReceived, setMessagesReceived] = useState([]);

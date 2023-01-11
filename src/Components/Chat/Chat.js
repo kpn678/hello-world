@@ -1,6 +1,7 @@
 import './Chat.css';
-import MessageLog from './MessageLog';
-import MessageInput from './MessageInput';
+import MessageLog from '../MessageLog/MessageLog';
+import MessageInput from '../MessageInput/MessageInput';
+
 
 const Chat = ({ username, room, socket }) => {
   return (
