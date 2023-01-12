@@ -7,6 +7,12 @@ const Sidebar = ({ username, room, socket }) => {
 
   const navigate = useNavigate();
 
+  const leaveRoom = () => {
+    const __createdtime__ = Date.now();
+    socket.emit('leave_room', { username, room, __createdtime__ });
+    navigate('/', { replace: true });
+  }
+
   useEffect(() => {
     socket.on('chatroom_users', (data) => {
       setRoomUsers(data);
