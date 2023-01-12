@@ -29,6 +29,15 @@ const MessageLog = ({ socket }) => {
     return () => socket.off('receive_message');
   }, [socket]);
 
+  useEffect(() => {
+    socket.on('last_100_messages', (last100Messages) => {
+      last100Messages = JSON.parse(last100Messages);
+      last100Messages = sortMessagesByDate(last100Messages);
+      setMessagesReceived((state) => [...last100Messages, ...state]);
+    });
+    return () => socket.off('last_100_messages');
+  }, [socket]);
+
   const message = messagesReceived.map((msg, i) => {
     return <MessageCard
       key={i}
