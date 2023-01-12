@@ -6,7 +6,7 @@ const MessageLog = ({ socket }) => {
   const [messagesReceived, setMessagesReceived] = useState([]);
 
   const sortMessagesByDate = (messages) => {
-    messages.sort((a, b) => parseInt(a.__createdtime__) - parseInt(b.__createdtime__));
+    return messages.sort((a, b) => parseInt(a.__createdtime__) - parseInt(b.__createdtime__));
   }
 
   const formatTimestamp = (timestamp) => {
