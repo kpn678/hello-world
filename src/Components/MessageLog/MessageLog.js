@@ -6,16 +6,14 @@ const MessageLog = ({ socket }) => {
   const [messagesReceived, setMessagesReceived] = useState([]);
 
   const sortMessagesByDate = (messages) => {
-    return messages.sort((a, b) => {
-      parseInt(a.__createdtime__) - parseInt(b.__createdtime__);
-    });
+    messages.sort((a, b) => parseInt(a.__createdtime__) - parseInt(b.__createdtime__));
   }
 
   const formatTimestamp = (timestamp) => {
     const date = new Date(timestamp);
     return date.toLocaleDateString();
   }
-  
+
   useEffect(() => {
     socket.on('receive_message', (data) => {
       console.log(data);
