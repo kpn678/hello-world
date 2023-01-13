@@ -19,6 +19,19 @@ const Sidebar = ({ username, room, socket }) => {
     });
     return () => socket.off('chatroom_users');
   }, [socket]);
+
+  return (
+    <nav>
+      <h2 className='room-title'>{room}</h2>
+      <section className='users-containter'>
+        {roomUsers.length > 0 && <h3>Users:</h3>}
+        <ul className='users-list'>
+          {roomUsers.map(user => <li key={user.id}>{user.username}</li>)}
+        </ul>
+      </section>
+      <button className='btn btn-outline' onClick={leaveRoom}>Leave</button>
+    </nav>
+  );
 }
 
 export default Sidebar;
