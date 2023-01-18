@@ -7,7 +7,7 @@ import Chat from './Components/Chat/Chat';
 
 const socket = io.connect('http://localhost:4000');
 
-function App() {
+const App = () => {
 
   const [username, setUsername] = useState('');
   const [room, setRoom] = useState('');
@@ -15,6 +15,7 @@ function App() {
   return (
     <Router>
       <main>
+        <h1>Hello, World!</h1>
         <Routes>
           <Route 
             path='/' 
