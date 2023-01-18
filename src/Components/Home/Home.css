@@ -1,0 +1,26 @@
+.login-form, .input-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login-form {
+  margin-top: 10vh;
+  height: 50vh;
+  width: 50vw;
+  background-color: #3A435E;
+}
+
+h2 {
+  text-align: center;
+}
+
+.input-info {
+  height: 25%;
+}
+
+input, select {
+  width: 10vw;
+  font-size: 1em;
+}

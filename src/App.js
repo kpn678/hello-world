@@ -15,6 +15,7 @@ const App = () => {
   return (
     <Router>
       <main>
+        <h1>Hello, World!</h1>
         <Routes>
           <Route 
             path='/' 
