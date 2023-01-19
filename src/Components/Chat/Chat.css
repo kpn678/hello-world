@@ -7,3 +7,9 @@
 .message-view {
   margin: 0 auto;
 }
+
+.btn-secondary {
+  border: 1px solid #fff;
+  background: #313E50;
+  color: #fff;
+}
