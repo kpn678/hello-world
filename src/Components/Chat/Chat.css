@@ -1,0 +1,15 @@
+.chat-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.message-view {
+  margin: 0 auto;
+}
+
+.btn-secondary {
+  border: 1px solid #fff;
+  background: #313E50;
+  color: #fff;
+}

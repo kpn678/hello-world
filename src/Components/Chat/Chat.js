@@ -8,8 +8,10 @@ const Chat = ({ username, room, socket }) => {
   return (
     <section className='chat-page'>
       <Sidebar username={username} room={room} socket={socket} />
-      <MessageLog socket={socket} />
-      <MessageInput username={username} room={room} socket={socket} />
+      <section className='message-view'>
+        <MessageLog socket={socket} />
+        <MessageInput username={username} room={room} socket={socket} />
+      </section>
     </section>
   );
 }

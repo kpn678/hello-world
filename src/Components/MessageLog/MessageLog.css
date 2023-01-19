@@ -1,0 +1,7 @@
+.messages {
+  height: 70%;
+  max-height: 70vh;
+  width: 70vw;
+  position: relative;
+  overflow: auto;
+}

@@ -22,14 +22,14 @@ const Sidebar = ({ username, room, socket }) => {
 
   return (
     <nav>
-      <h2 className='room-title'>{room}</h2>
-      <section className='users-containter'>
-        {roomUsers.length > 0 && <h3>Users:</h3>}
+      <h3 className='room-title'>{room}</h3>
+      <section className='users-container'>
+        {roomUsers.length > 0 && <h3 className='users-title'>Users:</h3>}
         <ul className='users-list'>
           {roomUsers.map(user => <li key={user.id}>{user.username}</li>)}
         </ul>
       </section>
-      <button className='btn btn-outline' onClick={leaveRoom}>Leave</button>
+      <button className='btn btn-secondary' onClick={leaveRoom}>Leave</button>
     </nav>
   );
 }

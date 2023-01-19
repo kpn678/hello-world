@@ -14,13 +14,13 @@ const MessageInput = ({ username, room, socket}) => {
 
   return (
     <section className='send-container'>
-      <input
+      <textarea
         className='message-field'
         placeholder='Type message...'
         onChange={(event) => setMessage(event.target.value)}
         value={message}
       />
-      <button className='btn btn-primary' onClick={sendMessage}>
+      <button className='btn btn-secondary' onClick={sendMessage}>
         Send
       </button>
     </section>

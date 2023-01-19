@@ -21,7 +21,7 @@ h2 {
   height: 25%;
 }
 
-input, select {
+.username-field, select {
   width: 10vw;
   font-size: 1em;
 }
