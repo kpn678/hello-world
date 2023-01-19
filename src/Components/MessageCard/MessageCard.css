@@ -1,0 +1,16 @@
+.individual-card {
+  background: #455561;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  padding: 11px;
+  width: 100%;
+}
+
+.message-username, .message-timestamp {
+  color: rgb(153, 217, 234);
+  font-size: 0.75em;
+}
+
+.message-text {
+  color: #fff;
+}
