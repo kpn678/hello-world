@@ -16,7 +16,7 @@ const Home = ({ setUsername, username, setRoom, room, socket }) => {
     <section className='login-form'>
       <h2>Welcome to the Chatroom Platform for All Devs to Communicate</h2>
       <section className='input-info'>
-        <input 
+        <input className='username-field'
           placeholder='Username'
           onChange={(event) => setUsername(event.target.value)}
         />
