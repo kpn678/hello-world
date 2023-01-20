@@ -33,6 +33,12 @@ h1 {
   cursor: pointer;
 }
 
+.btn-secondary {
+  border: 1px solid #fff;
+  background: #313E50;
+  color: #fff;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
