@@ -14,7 +14,7 @@ const Home = ({ setUsername, username, setRoom, room, socket }) => {
 
   return (
     <section className='login-form'>
-      <h2>Welcome to the Chatroom Platform for All Devs to Communicate</h2>
+      <h2>Welcome to the Simple, Easy-to-Use Chatroom Platform for All Devs to Communicate!</h2>
       <section className='input-info'>
         <input className='username-field'
           placeholder='Username'
