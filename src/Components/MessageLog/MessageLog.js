@@ -13,7 +13,8 @@ const MessageLog = ({ socket }) => {
 
   const formatTimestamp = (timestamp) => {
     const date = new Date(timestamp);
-    return date.toLocaleDateString();
+    console.log(date.toLocaleString());
+    return date.toLocaleString();
   }
 
   useEffect(() => {
