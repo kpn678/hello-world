@@ -10,7 +10,7 @@
 - Learn about databases through HarperDB and enabling real-time, bidirectional communcation between the client and server using Socket.io
 
 ## Deployed Links
-- [Website Link](https://hello-world-chat-app.vercel.app/)
+- [Website Link](https://hello-world-chat-app.vercel.app/)(link will load, but its functionality is hindered due to back-end not being deployed yet)
 - Back-end Link will be deployed soon
 
 ## Set Up
@@ -43,7 +43,7 @@
 ## Current Progress & Future Directions
 The current, major obstacle is figuring out how to deploy the back-end and not having to rely on locally starting the back-end repository in order to use the app. Research into better understanding HarperDB, as well as reserching deployment hosting sites, e.g. Railway, Heroku, etc., is underway.
 
-As for the front-end, basic functionality is up (although its full usage on the deployed website is dependent on the back-end being deployed), and next steps include improving error handling and mobile responsiveness. The app is also simple in scope at this time, but once remaining bugs/issues are managed, there are plans to research features such as local storage.
+As for the front-end, while the app has been deployed, its full usage is dependent on the back-end being deployed. Outside of this, next steps include improving error handling and mobile responsiveness. The app is also simple in scope at this time, but once remaining bugs/issues are managed, there are plans to research features such as local storage.
 
 ## Contributor
 - [Kristy Nguyen](https://www.linkedin.com/in/kristypnguyen/)
