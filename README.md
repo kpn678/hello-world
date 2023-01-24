@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Hello, World
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+**Hello, World** is an in-progress application that allows for a user to enter a chatroom and chat with other developers. Chatroom themes are based off of different programming languages. Users can come and go from each chatroom as they please. The partner back-end repo can be found [here](https://github.com/kpn678/hello-world-be).
 
-## Available Scripts
+#### Goals
+- Experiment with building a solo fullstack application while navigating my own inexperience with back-end
+- Demonstrate competence with front-end technologies including React (and relevant hooks), Router, asynchronous JavaScript
+- Gain experience with back-end technologies including Node.js and Express
+- Learn about databases through HarperDB and enabling real-time, bidirectional communcation between the client and server using Socket.io
 
-In the project directory, you can run:
+## Deployed Links
+- [Website Link](https://hello-world-chat-app.vercel.app/)
+- Back-end Link will be deployed soon
 
-### `npm start`
+## Set Up
+1. Fork this [repository](https://github.com/kpn678/hello-world-fe), and clone it into your local machine.
+2. Navigate into the repository and run `npm install` from your command line.
+3. To view the app running inside the local host, run `npm start`.
+4. For back-end set up, please go [here](https://github.com/kpn678/hello-world-be). Back-end must be running in order to use the front-end.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Implemented
+- Javascript
+- HTML
+- CSS
+- React
+- React Router
+- Node.js
+- Express
+- Socket.io
+- HarperDB
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Current Progress & Future Directions
+The current, major obstacle is figuring out how to deploy the back-end and not having to rely on locally starting the back-end repository in order to use the app. Research into better understanding HarperDB, as well as reserching deployment hosting sites, e.g. Railway, Heroku, etc., is underway.
 
-### `npm test`
+As for the front-end, basic functionality is up (although its full usage on the deployed website is dependent on the back-end being deployed), and next steps include improving error handling and mobile responsiveness. The app is also simple in scope at this time, but once remaining bugs/issues are managed, there are plans to research features such as local storage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributor
+- [Kristy Nguyen](https://www.linkedin.com/in/kristypnguyen/)
