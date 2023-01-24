@@ -13,12 +13,11 @@ const MessageLog = ({ socket }) => {
 
   const formatTimestamp = (timestamp) => {
     const date = new Date(timestamp);
-    return date.toLocaleDateString();
+    return date.toLocaleString();
   }
 
   useEffect(() => {
     socket.on('receive_message', (data) => {
-      console.log(data);
       setMessagesReceived((state) => [
         ...state,
         {
