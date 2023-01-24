@@ -19,6 +19,16 @@
 3. To view the app running inside the local host, run `npm start`.
 4. For back-end set up, please go [here](https://github.com/kpn678/hello-world-be). Back-end must be running in order to use the front-end.
 
+## Visual Walkthrough
+- User can choose a username and chatroom on the login page
+![Home Page](src/media/Hello-World-1.gif)
+
+- User can type a message and view messages from other users
+![Chat Page](src/media/Hello-World-2.gif)
+
+- User can leave the chatroom and join a new one
+![Leave Side Panel](src/media/Hello-World-3.gif)
+
 ## Technologies Implemented
 - Javascript
 - HTML
